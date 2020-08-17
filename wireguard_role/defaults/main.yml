@@ -2,12 +2,15 @@
 # defaults file for wireguard_role
 
 #Declare the VPN subnet
-vpn_network: '10.200.200'
+vpn_network: '192.168.214'
 
 #Declare the VPN server port
-vpn_port: '51820'
+vpn_port: '41827'
+
+# VPN DNS
+vpn_dns: '8.8.8.8'
 
 #Declare the number of clients
-clients: 10
+clients: 3
 
 client_config_path: 'wireguard_role/profiles'

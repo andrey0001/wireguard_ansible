@@ -13,9 +13,9 @@
   include: 'nat_and_firewall.yml'
   tags: nat_and_firewall
 
-- name: Set up unbound for DNS operations
-  include: 'dns.yml'
-  tags: dns
+#- name: Set up unbound for DNS operations
+#  include: 'dns.yml'
+#  tags: dns
 
 - name: Download client configs
   include: 'download_configs.yml'
@@ -32,5 +32,6 @@
   include: 'additional_client.yml'
   vars:
     new_client: newclient
-    new_client_ip: 10.200.200.12
+    new_client_ip: 192.168.214.5
   tags: ['never', 'add_client']
+
